@@ -11,6 +11,5 @@ router = APIRouter(prefix="/api/diagnostic", tags=["Formulario"])
     summary="Enviar formulario",
     description="Recibe un formulario con información personal y lo procesa."
 )
-async def submit_form(form_data: FormModel):
-    print(form_data)
+async def submit_form(form_data: FormModel):    
     return process_form(form_data)

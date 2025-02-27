@@ -95,14 +95,14 @@ FastAPI genera documentación automática accesible en:
 - **ReDoc:** [http://127.0.0.1:8000/redoc](http://127.0.0.1:8000/redoc)
 
 ## Autenticación
-El sistema usa un token de autorización para proteger el endpoint `/form/`. El token debe enviarse en el header `Authorization`:
+El sistema usa un token de autorización para proteger el endpoint `/api/diagnostic`. El token debe enviarse en el header `Authorization`:
 ```sh
 Authorization: Bearer tu_token_aqui
 ```
 
 ## Notas adicionales
 - Asegúrate de que el entorno virtual esté activado antes de ejecutar los comandos.
-- Si necesitas agregar más dependencias, instálalas con `pip install <paquete>` y actualiza `requirements.txt` con `pip freeze > requirements.txt`.
+- Si necesitas agregar más dependencias, instálalas con `pip install <paquete>` y actualiza `requirements.txt` con `    `.
 
 ## Licencia
 Este proyecto está bajo la licencia MIT.

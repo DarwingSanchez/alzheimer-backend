@@ -1,17 +1,16 @@
 from app.controllers.openai_controller import get_suggestion
+from app.controllers.prediction_controller import predict_alzheimer
 from app.models.form_model import FormModel
 
 def process_form(data: FormModel):
-    print(data)
     try:
-        
-        recommendations = get_suggestion(data, "baja")
-                
+        prediction = predict_alzheimer(data)
+        recommendations = get_suggestion(data, prediction)                
         return {
             "message": "Form received",
             "data": {
                 "name": data.name,
-                "probability": "baja",
+                "probability": prediction,
                 "recommendations": recommendations
             }
         }
