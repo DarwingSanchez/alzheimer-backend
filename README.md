@@ -55,12 +55,12 @@ uvicorn main:app --reload
 - **Body esperado:**
 ```json
 {
-    "country": "Colombia",
+    "name": "Darwing",
     "age": 30,
     "gender": "Male",
     "education_level": "University",
     "bmi": 24.5,
-    "physical_activity_level": "High",
+    "physical_activity": "High",
     "smoking_status": "Non-smoker",
     "alcohol_consumption": "Low",
     "diabetes": false,

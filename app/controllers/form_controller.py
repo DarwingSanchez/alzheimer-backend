@@ -10,6 +10,7 @@ def process_form(data: FormModel):
         return {
             "message": "Form received",
             "data": {
+                "name": data.name,
                 "probability": "baja",
                 "recommendations": recommendations
             }
